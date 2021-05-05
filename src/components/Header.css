@@ -1,0 +1,29 @@
+body{
+    background-color: rgba(216, 210, 210, 0.699);
+}
+
+.header{
+    background-color:#fff;
+    margin : 20px auto;
+    font-weight: 900;
+    border-radius:10px ;
+    box-shadow:5px 5px 5px rgba(124, 120, 120, 0.685);
+    
+}
+.cart_btn{
+    display:inline-flex;
+    
+}
+.counter{
+    background-color: red;
+    margin:8px 5px 2px 0px;
+    width:20px;
+    border-radius:50%;
+    color:#fff
+}
+.popover{
+    width:100px;
+    height:100px;
+    background-color:transparent;
+    margin-left:300px;
+}

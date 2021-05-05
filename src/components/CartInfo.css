@@ -1,0 +1,27 @@
+.cart_info{
+    background-color:#fff;
+    margin-left:1400px;
+    position:absolute;
+    z-index:9;
+    border-radius: 16px;
+    padding:20px;
+    box-shadow:5px 5px 5px rgb(145, 144, 144);
+    top:85px;
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 30px solid #fff;
+    position :absolute;
+    left:140px;
+    z-index:10;
+    top:-20px;
+    
+}
+
+.checkout{
+    width:100%;
+}

@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import React from "react"
 import './App.css';
+import CartInfo from "./components/CartInfo";
+import Header from "./components/Header"
+import Products from "./components/Products";
+import {useSelector} from "react-redux"
 
 function App() {
+  var cartVisibility;
+  const cart = useSelector(state => state.cartButton)
+  if(cart){
+    cartVisibility = <CartInfo />
+  }else{
+    cartVisibility = cartVisibility
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <Header />
+     {cartVisibility}
+     <hr />
+     <Products />
     </div>
   );
 }
